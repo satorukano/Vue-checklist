@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <headerbar />
+      <headerbar @return="page_back"/>
       <v-list lines="one" v-if="!showlist">
         <v-list-item v-for="member in members" :value="member.name"> <v-list-item-title v-text="member.name"
             @click="click_list(member.id)"></v-list-item-title>
@@ -58,6 +58,9 @@ export default {
       this. members = this.members.filter((member) => {
         return member.id != id
       })
+    },
+    page_back: function() {
+      this.showlist = false
     }
   }
 }
