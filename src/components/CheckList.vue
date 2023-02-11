@@ -94,7 +94,7 @@ export default {
       hash["data"] = this.list
       console.log(hash)
       this.edit = false
-      const response = await fetch("http://localhost:8080/edit", {
+      const response = await fetch(`${import.meta.env.VITE_API_HOST}/edit`, {
         headers: {
           'Content-Type': 'application/json'
         },

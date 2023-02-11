@@ -33,7 +33,7 @@ export default {
             console.log(this.list)
             hash["user_name"] = this.user
             console.log(hash)
-            const response = await fetch("http://localhost:8080/add", {
+            const response = await fetch(`${import.meta.env.VITE_API_HOST}/add`, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

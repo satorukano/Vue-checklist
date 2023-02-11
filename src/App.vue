@@ -39,7 +39,7 @@ export default {
     dialog: false
   }),
   mounted: async function () {
-    const response = await fetch("http://localhost:8080/member")
+    const response = await fetch(`${import.meta.env.VITE_API_HOST}/member`)
     let member = await response.json()
     console.log(member)
     this.members = member

@@ -34,7 +34,7 @@ export default {
             console.log(this.id)
             hash["user_id"] = this.id
             console.log(hash)
-            const response = await fetch("http://localhost:8080/delete", {
+            const response = await fetch(`${import.meta.env.VITE_API_HOST}/delete`, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
