@@ -112,7 +112,7 @@ export default {
       let hash = {}
       hash.id = this.id
       hash.table = this.table
-      const response = await fetch("http://localhost:8080", {
+      const response = await fetch(`${import.meta.env.VITE_API_HOST}`, {
         headers: {
           'Content-Type': 'application/json'
         },
