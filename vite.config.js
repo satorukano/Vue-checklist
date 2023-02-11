@@ -6,7 +6,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/Vue-checklist/",
+    base: "./",
 	devServer:{
         proxy:{
             '^/api':{
@@ -20,4 +20,5 @@ export default defineConfig({
 		vue(),
 		vuetify({ autoImport: true }),
 	],
+    
 })

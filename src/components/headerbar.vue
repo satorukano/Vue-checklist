@@ -7,10 +7,11 @@
 </template>
 
 <script>
+import image_url from "../assets/img/logo-header.jpg?url"
 export default {
     name: "headerbar",
     data: () => ({
-        img_src: "src/assets/images/logo-header.jpg"
+        img_src: image_url
     }),
     methods: {
         page_return: function() {
