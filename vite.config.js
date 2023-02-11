@@ -6,7 +6,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "Vue-checklist",
+    base: "Vue-checklist/dist",
 	devServer:{
         proxy:{
             '^/api':{
